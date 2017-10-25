@@ -1,0 +1,28 @@
+/* website 'chrome' */
+
+html {
+  font-size:0.625em;
+  position:relative;
+  color:$text;
+
+  * {
+    box-sizing:border-box
+  }
+
+  @media #{smallscreen} {
+    & { 
+      font-size:0.7em;
+    }
+  }
+}
+
+html,body {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+  width:100%;
+  position:relative;
+
+}

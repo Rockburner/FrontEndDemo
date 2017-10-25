@@ -1,0 +1,22 @@
+/* FE Demo scss */
+/* scss variable values */
+/* website 'chrome' */
+html {
+  font-size: 0.625em;
+  position: relative;
+  color: #838383; }
+  html * {
+    box-sizing: border-box; }
+  @media smallscreen {
+    html {
+      font-size: 0.7em; } }
+
+html, body {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  width: 100%;
+  position: relative; }
+
+/*# sourceMappingURL=css.css.map */
