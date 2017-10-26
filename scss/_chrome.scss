@@ -25,4 +25,18 @@ body {
   width:100%;
   position:relative;
 
+
+  header, footer {
+    ul {
+      padding:0px;
+    }
+  }
+
+  form {
+    fieldset {
+      border:none;
+      padding:0px;
+      margin:0px;
+    }
+  }
 }
