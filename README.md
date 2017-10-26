@@ -1,2 +1,2 @@
 # FrontEndDemo
-Demo of FrontEnd techniques
+Demo of simplified FrontEnd techniques
