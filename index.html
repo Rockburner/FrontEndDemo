@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<title>WOMAC : Women On the Move Against Cancer</title>
+
+<!-- meta tags here, inc open graph etc-->
+
+<!-- css files -->
+<link type="text/css" rel="stylesheet" href="resource/css.css"/>
+<!-- browser fixes here if required -->
+
+<!-- load javascrip libraries here -->
+
+<!-- favicon tags (all of them) -->
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<body>
+<!-- this header would be a php/mvc view template -->
+  <header>
+    <h1 class="logo"><img src="resource/logo.png" alt="Womac Logo"/><span>Womac</span></h1>
+    <nav class="menu">
+      <ul>
+<!-- to ensure consistent SEO behaviour - all links in header and footer would be derived from CMS and utilise a php view template  -->
+        <li><a href="/who-we-are" title="See who we are and what makes us tick" rel="menu">Who we are</a>
+          <ul>
+            <li><a href="/about-us" title="A little information about us" rel="menu">About us</a>
+            <li><a href="/our-history" title="Our long and glorious history" rel="menu">Our History</a>
+            <li><a href="/committee" title="Read about the doers and shakers" rel="menu">Committee</a>
+            <li><a href="/patrons" title="The very important people who help us do what we do" rel="menu">Patrons</a>  
+          </ul>
+        </li>
+        <li><a href="/our-work" title="View examples of our work" rel="menu">Our work</a></li>
+        <li><a href="/support-us" title="If you'd like to support us" rel="menu">Support Us</a></li>
+        <li><a href="/events" title="Our most recent events" rel="menu">Events</a></li>
+        <li><a href="/news" title="News stories about us" rel="menu">News</a></li>  
+        <li><a href="/contact-us" title="Get in touch" rel="menu">Contact us</a></li>
+      </ul>
+    </nav>
+    <div id="searchFormContainer" class="search shrunken">
+      <form id="searchForm" method="get" action="/search">
+        <fieldset>
+          <input type="text" name="searchterm" id="searchterm" placeholder="Enter search term here"/>
+          <button type="submit" name="submit"></button>
+        </fieldset>
+      </form>
+    </div>
+    <nav class="social"> 
+      <ul>
+        <li><a href="" title="" rel=""></a></li>
+        <li><a href="" title="" rel=""></a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- page contents from CMS utilising php/mvc controller to discern page required and then call to mvc model for page data, then pushed through mvc 'view' to add markup-->
+  <article id="main">
+    <h1>Women On the Move Against Cancer</h1>
+    <p>We support the fight against cancer and help provide funds to continue vital research</p>
+  
+    <p class="testmonial">Thank you so much for your continued support and hard work raising this amazing amount for Prostate Cancer UK</p>
+
+    <form id="donateForm" action="/donate" method="post">
+      <fieldset>
+        <input type="radio" name="radio_amount" value="5" id="radio_amount_5"/>
+        <input type="radio" name="radio_amount" value="10" id="radio_amount_10"/>
+        <input type="radio" name="radio_amount" value="15" id="radio_amount_15"/>
+        <button type="submit" name="submit">Donate</button>
+      </fieldset>
+    </form>
+
+    <p class="testmonial">Thank you so much for your continued support and hard work raising this amazing amount for Prostate Cancer UK</p>
+
+    <img class="fullwidth" src="resource/women.jpg" alt="Photograph of WOMAC women wearing white t-shirts and pink ribbons"/>
+
+    <h2><em>1 in every 2</em> people will develop cancer at some point in their lives</h2>
+
+    <p><a href="/join-us" title="Why not help us directly?">Join us</a> and help make a difference in the continuing fight against cancer so we can end it once and for all</p>
+
+    <ul class="poi">
+      <li><a href="/our-history" title="Our long and glorious history" rel="poi"><img src="resource/poi1.png" alt="Photo of a race car"/>Our History</a>
+      <li><a href="/our-work" title="View examples of our work" rel="poi"><img src="resource/poi2.png" alt="Photo of women celebrating"/>Our work</a></li>
+      <li><a href="/our-charities" title="Some of the charities we've supported" rel="poi"><img src="resource/poi3.png" alt="Photo of charity volunteers"/>Our Charities</a></li>
+
+    </ul>
+  </article>
+
+<!-- custom page segment derived from CMS data -->
+  <aside id="inforeel">
+    <ul>
+      <li>
+        <h4>We have supported over 40 projects</h4>
+        <p>WOMAC funds a different cancer project each year. It could be to help patients at home as well as in a hospital or hospice, perhps to provide equipment or buildings for the treatment of men, women or children</p>
+      </li>
+      <li>
+        <h4>In ut fermentum enim, nec consectetur neque</h4>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent sagittis semper mauris, id ornare mi lacinia et.</p>
+      </li>
+      <li>
+        <h4>Sed efficitur eget lacus a egestas</h4>
+        <p>Quisque ornare, velit ac pharetra bibendum, neque ipsum dignissim lacus, nec hendrerit nisl erat nec leo. Morbi maximus ante at risus hendrerit ultrices. Nunc efficitur malesuada aliquet. Pellentesque id dictum tortor. Duis rhoncus tortor sem, vitae placerat sapien consectetur vitae.</p>
+      </li>
+    </ul>
+  </aside>
+
+
+<!-- footer would be from php template view -->
+  <footer id="signup">
+    <aside>
+      <div>
+        <h3>Get the latest news &amp; updates</h3>
+        <p>Subscribe to our newsletter</p>
+      </div>
+      <div>
+        <form id="subscribeForm" method="post" action="/subscribe">
+          <fieldset>
+            <input type="email" name="email" id="email" placeholder="Email Address"/>
+            <button type="submit" name="submit">Sign up</button>
+          </fieldset>
+        </form>
+      </div>
+    </aside>
+  </footer>
+
+  <footer id="nav">
+    <nav class="footer">
+      <ul>
+        <li><a href="/about-us" title="A little information about us" rel="footer">About us</a>
+        <li><a href="/our-work" title="View examples of our work" rel="footer">Our work</a></li>
+        <li><a href="/events" title="Our most recent events" rel="footer">Events</a></li>
+
+        <li><a href="/news" title="News stories about us" rel="footer">News</a></li>  
+        <li><a href="/donate" title="We welcome all donations" rel="footer">Donate</a></li>
+        <li><a href="/fundraise" title="Help us perform fundraising" rel="footer">Fundraise</a></li>
+        
+        <li><a href="/committee" title="Read about the doers and shakers" rel="menu">Committee</a>
+        <li><a href="/patrons" title="The very important people who help us do what we do" rel="menu">Patrons</a>  
+        <li><a href="/contact-us" title="Get in touch" rel="footer">Contact us</a></li>        
+      </ul>
+    </nav>
+    
+    <blockquote>
+      <p>Women On the Move Against Cancer is administered by the Essex Community Foundation, registerd charity number: 1052061.</p>
+    </blockquote>
+
+  </footer>
+
+<!-- User Interactivity javascript here -->
+<!-- google analytics javascript -->
+
+
+</body>
+</html>

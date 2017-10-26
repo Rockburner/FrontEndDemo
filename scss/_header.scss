@@ -1,0 +1,96 @@
+/* header scss */
+
+header { 
+  position:relative;
+  width:100%; 
+
+
+  -webkit-box-shadow: 0px 14px 70px 11px rgba(230,230,230,1);
+  -moz-box-shadow: 0px 14px 70px 11px rgba(230,230,230,1);
+  box-shadow: 0px 14px 70px 11px rgba(230,230,230,1);
+
+  h1 {
+    display:inline-block;
+    span { 
+      display:none;
+    }
+  }
+
+  nav {
+    display:inline-block; 
+    ul {
+      display:inline;
+
+      li {
+        display:inline-block;
+        position:relative;
+
+        a { 
+          display:block;
+          color:$text; 
+          text-decoration:none;
+          padding:5px 1em; 
+        }
+
+        ul {
+          display:none;
+        }
+
+      }
+    }
+  }
+  nav.menu {
+    ul {
+      li {
+        &:hover,
+        &:active,
+        &:focus {
+
+          ul {
+            display:block;
+            position:absolute;
+            z-index:1;
+            top:100%; 
+            width:100%;
+
+            &:before {
+              content:'';
+              position:absolute;
+              z-index:-1;
+              width:100%;
+              height:100%;
+              top:0px;
+              right:0px;
+              bottom:0px;
+              left:0px;
+
+              background:$white;
+              background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 63%, rgba(255,255,255,0.75) 100%); /* FF3.6-15 */
+              background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 63%,rgba(255,255,255,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
+
+            }
+
+            li {
+              display:block;
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  nav.social {
+  }
+
+  div {
+    display:inline-block;
+
+    form { 
+      display:block;
+
+    }
+  }
+}
